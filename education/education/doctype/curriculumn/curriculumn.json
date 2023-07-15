@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-15 12:46:19.048356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_title",
+  "start_year",
+  "end_year",
+  "curriculumn_name",
+  "description",
+  "cia_passing_marks",
+  "program_owner",
+  "peopo_creation",
+  "import",
+  "edit",
+  "status",
+  "course__cos_to_blooms_level_mapping_status",
+  "student_to_course_registration"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_year",
+   "fieldtype": "Date",
+   "label": "Start Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_year",
+   "fieldtype": "Date",
+   "label": "End Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "curriculumn_name",
+   "fieldtype": "Data",
+   "label": "Curriculumn Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cia_passing_marks",
+   "fieldtype": "Int",
+   "label": "CIA Passing Marks"
+  },
+  {
+   "fieldname": "program_owner",
+   "fieldtype": "Link",
+   "label": "Program Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "program_title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program Title",
+   "options": "Program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "peopo_creation",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "PEO/PO Creation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "import",
+   "fieldtype": "Link",
+   "label": "Import",
+   "options": "Curriculumn"
+  },
+  {
+   "fieldname": "edit",
+   "fieldtype": "Icon",
+   "hidden": 1,
+   "label": "Edit",
+   "options": "pencil",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Icon",
+   "hidden": 1,
+   "label": "Status",
+   "options": "tick",
+   "read_only": 1
+  },
+  {
+   "fieldname": "course__cos_to_blooms_level_mapping_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Course _COS to Bloom's Level Mapping Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "student_to_course_registration",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Student to Course Registration",
+   "read_only": 1
+  }
+ ],
+ "links": [
+  {
+   "link_doctype": "Program",
+   "link_fieldname": "Name"
+  }
+ ],
+ "modified": "2023-07-15 13:47:43.771198",
+ "modified_by": "Administrator",
+ "module": "Education",
+ "name": "Curriculumn",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
