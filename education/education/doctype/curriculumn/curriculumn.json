@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "creation": "2023-07-15 12:46:19.048356",
- "default_view": "List",
+ "default_view": "Report",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -19,7 +19,8 @@
   "edit",
   "status",
   "course__cos_to_blooms_level_mapping_status",
-  "student_to_course_registration"
+  "student_to_course_registration",
+  "route"
  ],
  "fields": [
   {
@@ -66,7 +67,6 @@
   {
    "fieldname": "peopo_creation",
    "fieldtype": "Button",
-   "hidden": 1,
    "label": "PEO/PO Creation",
    "read_only": 1
   },
@@ -74,12 +74,12 @@
    "fieldname": "import",
    "fieldtype": "Link",
    "label": "Import",
-   "options": "Curriculumn"
+   "options": "Curriculumn",
+   "read_only": 1
   },
   {
    "fieldname": "edit",
    "fieldtype": "Icon",
-   "hidden": 1,
    "label": "Edit",
    "options": "pencil",
    "read_only": 1
@@ -87,7 +87,6 @@
   {
    "fieldname": "status",
    "fieldtype": "Icon",
-   "hidden": 1,
    "label": "Status",
    "options": "tick",
    "read_only": 1
@@ -95,25 +94,29 @@
   {
    "fieldname": "course__cos_to_blooms_level_mapping_status",
    "fieldtype": "Select",
-   "hidden": 1,
    "label": "Course _COS to Bloom's Level Mapping Status",
    "read_only": 1
   },
   {
    "fieldname": "student_to_course_registration",
    "fieldtype": "Select",
-   "hidden": 1,
    "label": "Student to Course Registration",
    "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "links": [
   {
    "link_doctype": "Program",
    "link_fieldname": "Name"
   }
  ],
- "modified": "2023-07-15 13:47:43.771198",
+ "modified": "2023-07-17 00:19:07.176978",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Curriculumn",

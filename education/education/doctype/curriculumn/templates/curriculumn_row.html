@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Curriculum</th>
+                    <th>Program</th>
+                    <th>Dept.</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Program Owner</th>
+                    <th>PEO / PO Creation</th>
+                    <th>Import</th>
+                    <th>Edit</th>
+                    <th>Status</th>
+                    <th>Course - COS to Bloom's Level Mapping Status</th>
+                    <th>Student to Course Registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ doc.program_title }}</td>
+                    <td>{{ doc.program }}</td>
+                    <td>{{ doc.dept }}</td>
+                    <td>{{ doc.from_date }}</td>
+                    <td>{{ doc.to_date }}</td>
+                    <td>{{ doc.program_owner }}</td>
+                    <td>{{ doc.peo_po_creation }}</td>
+                    <td>{{ doc.import }}</td>
+                    <td>{{ doc.edit }}</td>
+                    <td>{{ doc.status }}</td>
+                    <td>{{ doc.course_mapping_status }}</td>
+                    <td>{{ doc.student_registration }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
