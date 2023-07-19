@@ -8,14 +8,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "curriculumn_name",
   "program_title",
+  "department",
   "start_year",
   "end_year",
-  "curriculumn_name",
-  "description",
-  "cia_passing_marks",
   "program_owner",
   "peopo_creation",
+  "cia_passing_marks",
   "import",
   "edit",
   "status",
@@ -40,11 +40,6 @@
    "fieldname": "curriculumn_name",
    "fieldtype": "Data",
    "label": "Curriculumn Name"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Long Text",
-   "label": "Description"
   },
   {
    "fieldname": "cia_passing_marks",
@@ -108,6 +103,11 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
   }
  ],
  "has_web_view": 1,
@@ -117,7 +117,7 @@
    "link_fieldname": "Name"
   }
  ],
- "modified": "2023-07-19 15:21:41.967689",
+ "modified": "2023-07-19 15:29:49.459950",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Curriculumn",
