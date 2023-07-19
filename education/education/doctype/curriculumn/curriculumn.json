@@ -39,7 +39,8 @@
   {
    "fieldname": "curriculumn_name",
    "fieldtype": "Data",
-   "label": "Curriculumn Name"
+   "label": "Curriculumn Name",
+   "reqd": 1
   },
   {
    "fieldname": "cia_passing_marks",
@@ -50,7 +51,8 @@
    "fieldname": "program_owner",
    "fieldtype": "Link",
    "label": "Program Owner",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "program_title",
@@ -107,7 +109,8 @@
   {
    "fieldname": "department",
    "fieldtype": "Data",
-   "label": "Department"
+   "label": "Department",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
@@ -117,7 +120,7 @@
    "link_fieldname": "Name"
   }
  ],
- "modified": "2023-07-19 15:29:49.459950",
+ "modified": "2023-07-19 15:30:46.533992",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Curriculumn",
