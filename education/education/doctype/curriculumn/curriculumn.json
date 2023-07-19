@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "creation": "2023-07-15 12:46:19.048356",
  "default_view": "Report",
@@ -116,7 +117,7 @@
    "link_fieldname": "Name"
   }
  ],
- "modified": "2023-07-17 00:19:07.176978",
+ "modified": "2023-07-19 15:21:41.967689",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Curriculumn",
