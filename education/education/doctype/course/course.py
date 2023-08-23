@@ -6,20 +6,10 @@ import json
 
 import frappe
 from frappe import _
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
 
-class Course(Document):
-	def validate(self):
-		self.validate_assessment_criteria()
-
-	def validate_assessment_criteria(self):
-		if self.assessment_criteria:
-			total_weightage = 0
-			for criteria in self.assessment_criteria:
-				total_weightage += criteria.weightage or 0
-			if total_weightage != 100:
-				frappe.throw(_("Total Weightage of all Assessment Criteria must be 100%"))
+class Course(WebsiteGenerator):
 
 	def get_topics(self):
 		topic_data = []

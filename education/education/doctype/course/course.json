@@ -1,114 +1,272 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:course_name",
  "creation": "2015-09-07 12:39:55.181893",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "course_name",
-  "code",
-  "department",
-  "hero_image",
-  "column_break_tflc",
-  "description",
-  "section_break_6",
-  "topics",
-  "assessment_tab",
-  "assessment",
-  "default_grading_scale",
-  "assessment_criteria",
-  "connections_tab",
-  "curriculumn"
+  "curriculum",
+  "course_domain",
+  "termsemester",
+  "prerequisite_courses",
+  "type_of_course",
+  "type_options",
+  "course_owner",
+  "course_code",
+  "reviewer_department",
+  "course_title",
+  "course_reviewer",
+  "course_acronym",
+  "last_date_to_review",
+  "theory_credits",
+  "total_course_contact_hours",
+  "tutorial_credits",
+  "total_cia_marks",
+  "practical_credits",
+  "total_mid_term_marks",
+  "total_credits",
+  "total_tee_marks",
+  "total_cia_weightage",
+  "total_attendance_marks",
+  "total_tee_weightage",
+  "total_theorypractical_marks",
+  "total_weightage",
+  "tee_durationhours",
+  "cia_passing_marks",
+  "cognitive_domain",
+  "affective_domain",
+  "psychomotor_domain",
+  "bloom_suggestion",
+  "route",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "course_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Course Name",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
-   "fieldname": "department",
+   "fieldname": "curriculum",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Department",
-   "options": "Department"
+   "label": "Curriculum",
+   "options": "Curriculumn",
+   "reqd": 1
   },
   {
-   "fieldname": "section_break_6",
-   "fieldtype": "Section Break"
+   "fieldname": "course_domain",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Course Domain",
+   "options": "test1\ntestt2",
+   "reqd": 1
   },
   {
-   "fieldname": "topics",
-   "fieldtype": "Table",
-   "label": "Topics",
-   "options": "Course Topic"
+   "fieldname": "termsemester",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Term(Semester)",
+   "options": "1\n2",
+   "reqd": 1
   },
   {
-   "fieldname": "hero_image",
-   "fieldtype": "Attach Image",
-   "hidden": 1,
-   "label": "Hero Image"
-  },
-  {
-   "fieldname": "assessment",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "default_grading_scale",
+   "fieldname": "prerequisite_courses",
    "fieldtype": "Link",
-   "label": "Default Grading Scale",
-   "options": "Grading Scale"
+   "in_list_view": 1,
+   "label": "Prerequisite Courses",
+   "options": "Course"
   },
   {
-   "fieldname": "assessment_criteria",
-   "fieldtype": "Table",
-   "label": "Assessment Criteria",
-   "options": "Course Assessment Criteria"
+   "fieldname": "type_of_course",
+   "fieldtype": "Select",
+   "label": "Type of Course",
+   "options": "Theory\nPractical",
+   "reqd": 1
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
+   "fieldname": "type_options",
+   "fieldtype": "Select",
+   "label": "Type Options",
+   "options": "Theory\nTheory with Lab\nLab / Project Work / Others",
+   "reqd": 1
   },
   {
-   "fieldname": "column_break_tflc",
-   "fieldtype": "Column Break"
+   "fieldname": "course_owner",
+   "fieldtype": "Link",
+   "label": "Course Owner",
+   "options": "Instructor",
+   "reqd": 1
   },
   {
-   "fieldname": "assessment_tab",
-   "fieldtype": "Tab Break",
-   "label": "Assessment"
-  },
-  {
-   "fieldname": "connections_tab",
-   "fieldtype": "Tab Break",
-   "label": "Connections",
-   "show_dashboard": 1
-  },
-  {
-   "fieldname": "code",
+   "fieldname": "course_code",
    "fieldtype": "Data",
-   "label": "Code"
+   "label": "Course Code",
+   "reqd": 1
   },
   {
-   "fieldname": "curriculumn",
+   "fieldname": "reviewer_department",
+   "fieldtype": "Link",
+   "label": "Reviewer Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_title",
    "fieldtype": "Data",
-   "label": "Curriculumn"
+   "label": "Course Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_reviewer",
+   "fieldtype": "Link",
+   "label": "Course Reviewer",
+   "options": "Instructor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_acronym",
+   "fieldtype": "Data",
+   "label": "Course Acronym",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_date_to_review",
+   "fieldtype": "Date",
+   "label": "Last Date To Review",
+   "reqd": 1
+  },
+  {
+   "fieldname": "theory_credits",
+   "fieldtype": "Int",
+   "label": "Theory Credits",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_course_contact_hours",
+   "fieldtype": "Int",
+   "label": "Total Course Contact Hours",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tutorial_credits",
+   "fieldtype": "Int",
+   "label": "Tutorial Credits",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_cia_marks",
+   "fieldtype": "Int",
+   "label": "Total CIA Marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "practical_credits",
+   "fieldtype": "Int",
+   "label": "Practical Credits",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_mid_term_marks",
+   "fieldtype": "Int",
+   "label": "Total Mid Term Marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_credits",
+   "fieldtype": "Int",
+   "label": "Total Credits",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_tee_marks",
+   "fieldtype": "Int",
+   "label": "Total TEE Marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_cia_weightage",
+   "fieldtype": "Int",
+   "label": "Total CIA Weightage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_attendance_marks",
+   "fieldtype": "Int",
+   "label": "Total Attendance Marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_tee_weightage",
+   "fieldtype": "Int",
+   "label": "Total TEE Weightage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_theorypractical_marks",
+   "fieldtype": "Int",
+   "label": "Total Theory/Practical Marks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_weightage",
+   "fieldtype": "Int",
+   "label": "Total Weightage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tee_durationhours",
+   "fieldtype": "Int",
+   "label": "TEE Duration(Hours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cia_passing_marks",
+   "fieldtype": "Int",
+   "label": "CIA Passing Marks",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cognitive_domain",
+   "fieldtype": "Check",
+   "label": "Cognitive Domain"
+  },
+  {
+   "default": "0",
+   "fieldname": "affective_domain",
+   "fieldtype": "Check",
+   "label": "Affective Domain"
+  },
+  {
+   "default": "0",
+   "fieldname": "psychomotor_domain",
+   "fieldtype": "Check",
+   "label": "Psychomotor Domain"
+  },
+  {
+   "fieldname": "bloom_suggestion",
+   "fieldtype": "Data",
+   "label": "Bloom Suggestion",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Course",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "image_field": "hero_image",
+ "has_web_view": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-07-15 11:43:47.331267",
+ "modified": "2023-08-23 11:54:42.577164",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Course",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -160,9 +318,9 @@
    "write": 1
   }
  ],
- "search_fields": "course_name",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
